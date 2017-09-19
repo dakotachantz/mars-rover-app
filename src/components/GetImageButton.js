@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class GetImageButton extends Component {
-    render() {
-        return (
-            <div>
-
-            </div>
-        )
-    }
+const GetImageButton = (props) => {
+    return (
+        <div>
+            <button onClick={props.fetchRoverImage}>Get Rover Image</button>
+        </div>
+    );
 }
+
+export default GetImageButton;
